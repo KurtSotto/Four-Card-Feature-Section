@@ -1,0 +1,160 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
+}
+
+
+/* typography */
+p{
+    margin: 0;
+    font-size: 0.938rem;
+}
+
+h1, h2{
+    margin: 0;
+    color: hsl(234, 12%, 34%);
+}
+
+/* header */
+header{
+    text-align: center;
+    width: 90%;
+    margin-inline: auto;
+    max-width: 470px;
+    margin-bottom: 3em;
+}
+
+.first-header{
+    font-weight: 200;
+}
+
+.second-header{
+    margin-bottom: .3em;
+}
+
+header p{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+
+/* main */
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5em;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four';
+}
+
+article p{
+    color: hsl(229, 6%, 66%);
+}
+
+
+/* supervisor */
+.article{
+    padding: 1.5em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-top-style: solid;
+    box-shadow: 3px 6px 25px rgba(0, 0, 0, .1);
+}
+
+.supervisor{
+    margin-top: 1em;
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+article h2{
+    font-size: 1.12rem;
+    margin-bottom: .3em;
+}
+
+article p{
+    font-size: .75rem;
+}
+
+
+.flex{
+    margin-top: 2em;
+    display: flex;
+    justify-content: end;
+}
+
+/* team builder */
+.team-builder{
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+/* karma */
+.karma{
+    border-top-color: hsl(34, 97%, 64%);
+}
+
+/* calculator */
+.calculator{
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+article:nth-child(1){
+    grid-area: one;
+}
+
+article:nth-child(2){
+    grid-area: two;
+}
+
+article:nth-child(3){
+    grid-area: three;
+}
+
+article:nth-child(4){
+    grid-area: four;
+}
+
+footer{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 450px;
+    margin-top: 2em;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+a{
+    color: hsl(229, 6%, 66%);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 769px){
+    main{
+        grid-template-areas: 
+        '. two .'
+        'one two four'
+        'one three four'
+        '. three .';
+    }
+}
+
+@media (max-width: 425px){
+    .first-header,
+    .second-header{
+        font-size: 1.6rem;
+    }
+
+    header p{
+        width: 95%;
+        margin-inline: auto;
+    }
+}
