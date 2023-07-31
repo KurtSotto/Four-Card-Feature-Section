@@ -1,4 +1,4 @@
-<img src="/design/desktop-design.jpg">
+<img src="/design/desktop-preview.jpg">
 <h1>Frontend Mentor - Four card feature section solution</h1>
 
 This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
